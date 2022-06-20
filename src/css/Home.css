@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "BananaGrotesk-Semibold";
+  src: url("../assets/Fonts/BananaGrotesk-Semibold.otf");
+}
+@font-face {
+  font-family: "BananaGrotesk-Medium";
+  src: url("../assets/Fonts/BananaGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "BananaGrotesk-Light";
+  src: url("../assets/Fonts/BananaGrotesk-Light.otf");
+}
+@font-face {
+  font-family: "BananaGrotesk-Thin";
+  src: url("../assets/Fonts/BananaGrotesk-Thin.otf");
+}
+
+#home {
+  width: 100vw;
+}
+
+/* Header */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 1rem;
+  width: 93%;
+}
+
+/* Navbar */
+
+#navBar {
+  text-align: right;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: white;
+  padding-right: 1rem;
+  border: none;
+  background-color: transparent;
+  display: inline;
+  width: fit-content;
+}
+
+.navLinks:hover {
+  cursor: pointer;
+}
+
+#logo {
+  width: 194px;
+  height: 62px;
+}
+
+#webpage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Website Information */
+
+#websiteInformationContainer {
+  background: #fde3d9 0% 0% no-repeat padding-box;
+}
+
+#websiteInformation {
+  width: 80%;
+  margin: auto;
+  margin-top: 44vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+#heading {
+  width: 60%;
+  font-size: 42px;
+  font-family: "BananaGrotesk-Medium";
+  text-align: left;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  opacity: 1;
+  margin-bottom: 20px;
+  line-height: 54px;
+}
+
+#subHeading {
+  width: 46%;
+  font-size: 16px;
+  font-family: "BananaGrotesk-Light";
+  text-align: left;
+  letter-spacing: -0.11px;
+  color: #6d6d6d;
+  opacity: 1;
+  margin-bottom: 10vh;
+  line-height: 27px;
+}
+
+#imageSlider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#installLinkContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 50px;
+}
+
+.appLinksAppStore {
+  width: 160px;
+  height: 53px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.appLinksPlayStore {
+  width: 207px;
+  height: 80px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* Image Slider */
+
+#imageInfoContainer {
+  margin-top: 60vh;
+  margin-left: 5vw;
+  width: 30.5%;
+}
+
+#imageInfo {
+  color: white;
+}
+
+#imageHeading {
+  font-size: 18px;
+  font-family: "BananaGrotesk-Semibold";
+  text-align: left;
+  letter-spacing: -0.12px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 23px;
+}
+
+#imageSubHeading {
+  width: 90%;
+  font-size: 18px;
+  font-family: "BananaGrotesk-Thin";
+  letter-spacing: var(--unnamed-character-spacing--0-11);
+  text-align: left;
+  letter-spacing: -0.11px;
+  color: #ffe8df;
+  opacity: 1;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+#imageSliderDotsContainer {
+  display: flex;
+}
+
+.imageSliderDots {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  opacity: 1;
+  margin-right: 10px;
+  border: 1px solid #ffe8df;
+  margin-bottom: 100px;
+}
+
+#socialMediaIconsContainer {
+  width: auto;
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
+}
+
+.socialMediaIcons {
+  color: white;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  #webpage {
+    flex-direction: column;
+  }
+  .navLinks {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  #navBar {
+    text-align: left;
+    margin-left: 15vw;
+  }
+}
